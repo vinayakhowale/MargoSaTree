@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+html {
+    /* 1rem = 10px */
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+:root {
+    --btn-color: #5956e9;
+    --text-size: 20px;
+    --radius: 20px;
+    --title: #c86876;
+    --textk-col: #89898d;
+    --transition: all .3s ease-in-out;
+    --shadow: #ECF2F6;
+    --border-lighter: 1px solid #ecf2f6;
+}
+
+
+
+.navbar-brand {
+    margin-left: 55px;
+}
+
+.navlinks {
+    font-size: 15px;
+    position: sticky;
+    transform: scaleX(1.2);
+    margin-right: 27px;
+}
+
+.navlinks a {
+    color: gray;
+}
+
+.navlinks a:hover {
+    color: var(--btn-color);
+}
+
+.navlinks a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--btn-color);
+    height: 3px;
+    width: 0%;
+    left: 8px;
+    bottom: 2px;
+    transition: 1s;
+}
+
+.navlinks a:hover:after {
+    width: 80%;
+    background-color: var(--btn-color);
+    color: var(--btn-color);
+}
+
+.text-size {
+    font-size: var(--text-size);
+    width: 80%;
+}
+
+.sm-navlinks ul li:hover {
+    color: var(--btn-color);
+}
+
+/* header end  */
+.header {
+    position: relative;
+    width: 100%;
+    min-height: 80px;
+}
+
+.header-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 89;
+    background-color: transparent;
+}
+
+.navbar-scroll {
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.6s;
+}
+
+/* banner start */
+.coming-soon{
+    background-color: #f0f7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    flex-direction: column;
+    height: 30rem;
+}
+

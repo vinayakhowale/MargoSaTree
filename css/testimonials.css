@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+:root {
+    --btn-color: #5956e9;
+    --textk-col: #89898d;
+    --number-size: 60px;
+    --box-radius: 24px;
+    --card-bg-color: #ecf2f6;
+    --fb-bg-setion: #27272e;
+
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+} 
+.project-bub-one{
+    position: relative;
+    bottom: 20px;
+    width: 320px;
+    bottom: 6rem;
+}
+.test-ban{
+    margin-top: 3rem;
+}
+.line{
+    margin-top: 7rem;
+}
+.test-line-one{
+    position: absolute;
+    top: 39px;
+}
+.test-ban-text {
+    width: 72%;
+    font-size: 18px;
+}
+.google{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+/* fb section  start*/
+.fb-section{
+background-color: var(--fb-bg-setion);
+}
+.fb-text{ 
+   width: 35%;
+}
+.yelp{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.yelp img{
+    width: 150px;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .project-bub-one{
+        width: 6rem !important;
+        height: 10rem !important;
+    }
+}
+@media (max-width:  991.98px) {
+    .test-ban-text {
+        width: 100%;
+        font-size: 18px;
+    }
+    .google{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }  
+    .yelp{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+}

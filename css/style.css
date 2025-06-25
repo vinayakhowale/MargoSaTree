@@ -1,0 +1,672 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 1rem = 10px */
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+:root {
+    --btn-color: #5956e9;
+    --text-size: 20px;
+    --radius: 20px;
+    --services-bg-color: #27272e;
+    --title-color: #b94b4a;
+    -about-us-title: #c76379;
+    --textk-col: #89898d;
+    --transition: all .3s ease-in-out;
+    --shadow: #ECF2F6;
+    --border-lighter: 1px solid #ecf2f6;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+}
+
+.radius {
+    border-radius: 20px;
+}
+
+.font-famaily {
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.bub-one {
+    position: relative; 
+    top: 9rem;
+    width: 10rem;
+    height: 10rem;
+}
+.bubb-one{
+    position: relative;
+    width: 29rem;
+    bottom: 3rem;
+}
+.bub-two {
+    position: relative;
+    z-index: -1;
+    width: 343px;
+    height: 29rem;
+    bottom: 4rem;
+}
+
+.nav-banner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn-circle {
+    padding: 23px 55px;
+    background-color: var(--btn-color);
+    box-shadow: 0 44px 84px -24px var(--btn-color);
+}
+
+.navbar-brand {
+    margin-left: 55px;
+}
+
+.navlinks {
+    font-size: 15px;
+    position: sticky;
+    transform: scaleX(1.2);
+    margin-right: 27px;
+}
+
+.navlinks a {
+    color: gray;
+  
+}
+
+.navlinks a:hover {
+    color: var(--btn-color);
+}
+
+.navlinks a::after {
+    content: "";
+    position: absolute;
+    background-color: var(--btn-color);
+    height: 3px;
+    width: 0%;
+    left: 8px;
+    bottom: 2px;
+    transition: 1s;
+}
+
+.navlinks a:hover:after {
+    width: 80%;
+    background-color: var(--btn-color);
+    color: var(--btn-color);
+}
+
+.text-size {
+    font-size: var(--text-size);
+    width: 80%;
+}
+
+.line {
+    position: relative;
+    bottom: 20px;
+}
+
+.sm-navlinks {
+    position: relative;
+    bottom: 32px;
+}
+
+.sm-navlinks ul li {
+    padding-bottom: 10px;
+}
+
+.sm-navlinks ul li:hover {
+    color: var(--btn-color);
+}
+
+/* banner-start */
+
+.card-one {
+    margin-left: 7rem;
+    background: transparent;
+}
+
+.card-heading {
+    margin-left: 6rem;
+}
+
+.banner {
+    width: 100%;
+    margin: auto;
+    margin-top: 5rem;
+    height: 36rem;
+}
+
+.banner-one {
+    position: absolute;
+    background: transparent;
+    top: 16rem;
+}
+
+.bub-three {
+    position: absolute;
+    left: 143px;
+    width: 7%;
+    top: 162px;
+}
+
+.ban-heading {
+    width: 100% !important;
+    font-size: 57px;
+    font-weight: 700;
+    position: relative;
+}
+
+.heading-one {
+    display: flex;
+    justify-items: center;
+}
+
+.card-text {
+    font-size: 21px;
+    width: 106%;
+}
+
+.get-start-btn {
+    padding: 23px 50px;
+    box-shadow: 0 44px 84px -24px #5956e9;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: var(--btn-color);
+    margin-top: 35px;
+}
+
+.chat-icon {
+    width: 21rem;
+    position: relative;
+    right: 7rem;
+    top: 2rem;
+}
+
+.laptop {
+    margin-right: 9rem;
+    z-index: -1;
+}
+
+.ch-img {
+    height: 120px;
+}
+
+.chat {
+    height: 20vh;
+}
+
+.hand {
+    width: 25vw;
+    margin-top: 16rem;
+}
+
+.bub-four {
+    width: 10%;
+    position: relative;
+    top: 15rem;
+}
+
+/* service section start */
+.card-m {
+    width: 87%;
+}
+.service-section-s{
+    margin-top: 20px;
+    background-color: var(--services-bg-color);
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+}
+.serv-card-text {
+    width: 100%;
+}
+
+.service-section {
+    background-color: var(--services-bg-color);
+}
+
+.title-color {
+    color: var(--title-color);
+}
+
+.service-heading {
+    font-size: 60px;
+    width: 50%;
+    font-weight: 500;
+}
+
+.text {
+    color: var(--textk-col);
+}
+
+.text-one {
+    width: 42%;
+}
+
+/* services card icons */
+.icon-one {
+    width: 25%;
+    margin-left: 16px;
+    padding-bottom: 30px;
+}
+
+.icon-two {
+    width: 20%;
+    margin-left: 16px;
+    padding-bottom: 30px;
+}
+
+.icon-three {
+    width: 20%;
+    margin-left: 16px;
+    padding-bottom: 30px;
+}
+
+.card-color {
+    padding: 50px 55px 40px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    transition: var(--transition);
+    background-color: rgb(43, 43, 49);
+}
+
+.services-card {
+    padding-top: 50px;
+    padding-left: 42px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 0;
+}
+
+.services-card:hover {
+    transition: 1s;
+    background-color: rgb(43, 43, 49);
+}
+
+.find-more {
+    margin-left: 50px;
+}
+
+.list {
+    display: flex;
+    height: 30px;
+}
+
+.link {
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    right: 0px;
+}
+
+.link:hover {
+    transition: 1s;
+    padding-left: 49px;
+    color: #f9b7c2;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    left: 0;
+    height: 3px;
+    background-color: #ebf1f5;
+    transition: width 0.5s ease-out;
+    top: 12px;
+}
+
+.link:hover.link::after {
+    width: 20%;
+}
+
+/* about us start */
+
+.about-us {
+    color: #c76379;
+}
+
+.about-us-text {
+    width: 90%;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+}
+
+.about-us-form {
+    width: 65%;
+    margin-left: 11rem;
+}
+
+.name {
+    padding: 18px;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.input-filed {
+    margin-top: 35px;
+}
+
+.Get-Free-Quote {
+    margin-top: 60px;
+    background-color: #5956e9;
+    border-radius: var(--radius);
+}
+
+.input input:hover {
+    box-shadow: 20px 20px 50px var(--shadow);
+}
+
+
+/* our project start */
+.card-radius {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    margin-top: 1rem;
+}
+
+.img-holder {
+    overflow: hidden;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.img-holder img {
+    transition: all 1.5s ease;
+}
+
+.img-holder:hover img {
+    transform: scale(1.3);
+}
+
+.project-heading {
+    width: 33%;
+}
+
+
+.project-title {
+    text-decoration: none;
+    font-size: 27px;
+    color: black;
+    font-weight: 400;
+}
+
+/* p mean info in text format */
+
+.project-p {
+    font-size: 18px;
+    color: black;
+}
+
+/* card image effect  */
+.inner {
+    overflow: hidden;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+}
+
+.inner:hover img {
+    transform: scale(1.2);
+}
+
+/* start design-section  */
+.design-section {
+    background-color: #27272e;
+    padding-top: 8rem;
+}
+
+.design-text {
+    width: 43%;
+    margin: auto;
+    text-align: center;
+}
+
+.design-text p {
+    font-size: 20px;
+    color: #949189;
+}
+
+.year {
+    width: 100%;
+    border-radius: 24px;
+    padding: 40px;
+    padding-top: 63px;
+    padding-bottom: 55px;
+    background-color: rgb(43, 43, 49);
+}
+
+.projects-deliverd {
+    width: 100%;
+    border-radius: 24px;
+    padding: 40px;
+    padding-top: 63px;
+    padding-bottom: 55px;
+}
+
+.projects-deliverd:hover {
+    transition: 1s;
+    background-color: rgb(43, 43, 49);
+}
+
+.design-container {
+    width: 87%;
+}
+
+.desing {
+    padding-bottom: 11rem;
+}
+
+/* Testimonial start */
+.testimonial-text {
+    width: 48%;
+}
+
+.testimonial-text p {
+    font-size: 19px;
+    color: black;
+}
+
+.text {
+    width: 97%;
+    color: black;
+}
+
+.te-one {
+    width: 60px;
+    height: 60px;
+}
+
+/* testimonial icon */
+
+.tesi-icon {
+    width: 105px;
+    height: auto;
+    margin-left: 15px;
+}
+
+.tesi-ico-two {
+    width: 10%;
+    margin-left: 15px;
+}
+
+/* end */
+.service-card-bg-color{
+    background-color: var(--services-bg-color);
+}
+
+
+/* resposive  */
+@media (max-width: 576px) {
+    .card-one {
+        position: relative;
+        bottom: 10rem;
+    }
+
+    .service-section {
+        margin-bottom: -2rem !important;
+    }
+    .about-us-form {
+        width: 100%;
+    }
+
+    .hand{
+        position: relative !important;
+        bottom: 27rem !important;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .banner-revers {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .laptop {
+        margin-top: 20px;
+
+    }
+
+    .about-us-form {
+        width: 100%;
+    }
+
+    .card-one {
+        position: relative;
+        top: 21rem;
+    }
+
+    .bub-two {
+        position: relative;
+        width: 136px;
+        height: 12rem;
+        bottom: 5rem;
+    }
+
+    .hand {
+        width: 40vw;
+        position: relative;
+        bottom: 20rem;
+    }
+
+    .about-us-form {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .design-container {
+        width: 100%;
+    }
+
+    .design-text {
+        width: 100%;
+    }
+
+    .testimonial-text {
+        width: 100%;
+    }
+
+    .card-m {
+        width: 100%;
+        margin-top: 22rem;
+    }
+    .card-o{
+        margin-top: 5rem;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    .nav-banner {
+        width: 100%;
+    }
+
+    .banner {
+        width: 100%;
+        margin: auto;
+        margin-top: 0rem;
+    }
+
+    .service-section {
+        margin-top: 11rem;
+    }
+
+    .laptop {
+        margin-right: 0rem;
+        z-index: -1;
+    }
+
+    .hand {
+        width: 40vw;
+        margin-top: 45rem;
+    }
+
+    .get-start-btn {
+        padding: 20px 35px;
+        font-size: 16px;
+    }
+
+    .service-heading {
+        font-size: 60px;
+        width: 100%;
+        font-weight: 500;
+    }
+
+    .text-one {
+        width: 100%;
+    }
+
+    .card-m {
+        width: 100%;
+    }
+    .project-heading {
+        width: 100%;
+    }
+
+    /* about us start */
+    .about-us-form {
+        width: 100%;
+        margin: auto;
+    }
+    .service-section-s {
+        margin-top: 25rem;
+        background-color: var(--services-bg-color);
+        padding-top: 8rem;
+        padding-bottom: 10rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card-one {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+:root {
+    --textk-col: #89898d;
+    --number-size: 60px;
+    --box-radius: 24px;
+    --card-bg-color: #ecf2f6;
+    --services-bg-color: #27272e;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.brand{
+margin-top: 7rem;
+}
+.ban-p-img {
+    transform: scale(1.4);
+    position: relative;
+    right: 3rem;
+    bottom: 2rem;
+    z-index: 1;
+}
+
+/* brad start */
+.brad-bg-img {
+    background-color: var(--services-bg-color);
+}
+
+.brand-img {
+    width: 15rem;
+}
+
+.footer {
+    margin-top: 4rem;
+    ;
+}
+
+/* responsive */
+@media (max-width: 991.98px) {
+
+    .ban-p-img {
+        transform: scale(1.4);
+        position: relative;
+        right: 0rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        z-index: 1;
+    }
+
+}

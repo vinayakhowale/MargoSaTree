@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+:root {
+    --btn-color: #5956e9;
+    --textk-col: #89898d;
+    --number-size: 60px;
+    --box-radius: 24px;
+    --card-bg-color: #ecf2f6;
+
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+.project-ban-img{
+    transform: scale(1.4);
+    position: relative;
+    right: 3rem;
+    bottom: 2rem;
+    z-index: 1;
+}
+.project-head {
+    width: 50%;
+}
+.project-bub-one {
+    position: relative;
+    z-index: -1;
+    width: 20%;
+    bottom: 5rem;
+}
+.project-card-title {
+    text-decoration: none;
+    font-size: 23px;    
+    color: black;
+    font-weight: 400;
+}
+.card-fo{
+   padding: 2rem; 
+}
+.project-btn{
+    padding:18px 55px;
+    border-radius: 18px;
+    margin-top: 2rem;
+    background-color: var(--btn-color);
+}
+.banner-project{
+    margin-top: 6rem
+}
+
+.line{
+    position: relative;
+    bottom: 3rem;
+}
+.off-line-one{
+    position: absolute;
+}
+.project-line-one {
+    position: absolute;
+    top: 18rem;
+    z-index: -1;
+}
+
+.our-project{
+    position: relative;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .project-bub-one {
+        width: 6rem !important;
+        height: 10rem !important;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .project-ban-img{
+      margin-top: 7rem;
+      position: relative;
+      right: 0rem;
+      bottom: 2rem;
+    }
+    .progress{
+        position: relative;
+        top: 4rem;
+    }
+
+}

@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+:root {
+    --textk-col: #89898d;
+    --number-size: 60px;
+    --box-radius: 24px;
+    --card-bg-color: #ecf2f6;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.off-heading {
+    margin-top: 7rem;
+}
+
+.off-line-one {
+    position: absolute;
+    top: 26rem;
+    z-index: -1;
+}
+
+.off-ban-img {
+    justify-content: center;
+    align-items: center;
+}
+
+.off-img {
+    transform: scale(1.5);
+    position: relative;
+    right: 3rem;
+    bottom: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 10px;
+    z-index: 1;
+}
+
+.progress {
+    background-color: #c8c8c8;
+    position: relative;
+    bottom: 5px;
+}
+
+/* experts-section start */
+.experts-section {
+    margin-top: 13rem;
+}
+
+.hr-line {
+    position: relative;
+    bottom: 22px;
+    height: 2px;
+    background: #c8c8c8;
+}
+
+.careers-btn {
+    width: 240px;
+    padding: 23px 55px;
+    background-color: #5956e9;
+    border-radius: 20px;
+}
+
+/* year start */
+.card-one {
+    padding: 60px 0px 60px;
+    width: 85%;
+    border-radius: var(--box-radius);
+    border: 0;
+}
+
+.card-one-active-bg-color {
+    background-color: var(--card-bg-color);
+}
+
+.bg-color {
+    background-image: linear-gradient(to left, rgb(255, 0, 0, 0), rgb(236, 242, 246));
+}
+
+.bg-color:hover {
+    background-image: linear-gradient(to left, rgb(236, 242, 246), rgb(236, 242, 246));
+}
+
+.year-card {
+    position: relative;
+    left: 55px;
+    bottom: 5rem;
+}
+
+.year-icon-one {
+    margin-bottom: 15px;
+}
+
+/* card-top-margin */
+.card-top-m {
+    margin-top: 35px;
+}
+
+.card-three {
+    position: relative;
+    left: 55px;
+}
+
+.year-title {
+    font-size: 16px;
+    color: var(--textk-col);
+}
+
+.year-text h1 {
+    font-size: var(--number-size);
+}
+
+/* services start */
+.service-section{
+    margin-top: 16rem;
+}
+.service-width {
+    width: 40%;
+}
+
+.icon-one {
+    width: 25%;
+    margin-left: 16px;
+    padding-bottom: 30px;
+}
+
+.s-card {
+    padding-left: 35px;
+    padding-top: 3rem;
+}
+
+.serv-card-text {
+    width: 90%;
+}
+
+.link a {
+    text-decoration: none;
+    padding-top: 10px;
+}
+.service-card-bg-color {
+    background-image: linear-gradient(to top, rgb(255, 0, 0, 0), rgb(248, 248, 248));
+    border-radius: var(--box-radius);
+}
+.icon-two{
+    width: 18%;
+    margin-left: 16px;
+    padding-bottom: 30px;
+}
+.icon-three {
+    width: 23%;
+    margin-left: 16px;
+    padding-bottom: 30px;
+}
+.icon-clock{
+    width: 18%;
+    margin-left: 16px;
+    padding-bottom: 30px;   
+}
+.service-card-bg-color:hover {
+    transition: 1s;
+    background-image: linear-gradient(to bottom, rgb(255, 0, 0, 0), rgb(236, 242, 246));
+    border-radius: var(--box-radius);
+}
+
+.service-card-bg-color:hover .s-link {
+    transition: 0.5s;
+    padding-left: 45px;
+}
+
+.our-valus-section{
+margin-top: 7htrem;
+}
+
+/* responsive page */
+@media (max-width: 575.98px) {}
+
+@media (max-width: 991.98px) {
+    .off-img {
+        transform: scale(1.2);
+        position: relative;
+        right: 0rem;
+        z-index: 1;
+    }
+
+    .year-on {
+        position: relative;
+        top: 0rem;
+    }
+    .service-width {
+        width: 100%;
+    }
+
+    .card-one {
+        padding: 60px 0px 60px;
+        width: 100%;
+        border-radius: var(--box-radius);
+        border: 0;
+        margin-top: 2rem;
+    }
+
+}
+
+@media (max-width: 1199.98px) {
+    .card-one {
+        padding: 60px 0px 60px;
+        width: 100%;
+        border-radius: var(--box-radius);
+        border: 0;
+    }
+
+    .year-card {
+        position: relative;
+        left: 0px;
+        bottom: 0rem;
+    }
+
+    .card-three {
+        position: relative;
+        left: 0px;
+    }
+}
